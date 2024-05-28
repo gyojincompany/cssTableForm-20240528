@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가입양식 만들기</title>
+    <link rel="stylesheet" type="text/css" href="css/join.css">
+</head>
+<body>
+    <h3>가입 양식</h3>
+    <form>
+    <table>
+        <tr>
+            <td class="col1">아이디 :</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="col1">비밀번호 :</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td class="col1">비밀번호 확인 :</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td class="col1">이름 :</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="col1">성별 :</td>
+            <td>
+                <input type="radio" name="gender" checked> 여성&nbsp;&nbsp;
+                <input type="radio" name="gender"> 남성
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">휴대전화 :</td>
+            <td>
+                <select>
+                    <option>010</option>
+                    <option>011</option>
+                    <option>017</option>
+                </select> -
+                <input class="hp" type="text"> - <input class="hp" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">이메일 :</td>
+            <td>
+                <input type="text"> @
+                <select>
+                    <option>선택</option>
+                    <option>naver.com</option>
+                    <option>hanmail.net</option>
+                    <option>gmail.com</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">취미 :</td>
+            <td>
+                <input type="checkbox" name="hobby1">음악감상
+                <input type="checkbox" name="hobby1">독서
+                <input type="checkbox" name="hobby1">등산
+            </td>
+        </tr>
+        <tr>
+            <td id="intro" class="col1">자기소개 :</td>
+            <td>
+                <textarea cols="35" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">파일 첨부 :</td>
+            <td>
+                <input id="file" type="file">&nbsp;&nbsp;&nbsp;
+                * 2MB까지 가능
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
