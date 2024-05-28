@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css form 연습</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        table {
+            border-collapse:collapse;
+            width:220px;
+            height:120px;
+            border-radius:15px;
+            border-style:hidden;
+            box-shadow:0 0 0 1px #bbbbbb;
+            margin: 10px 0 0 10px;
+        }
+        div#login_title {
+            font-family:"Arial";
+            font-weight:bold;
+            font-size:20px;
+        }
+        td {
+            padding: 10px 0px 0px 10px;
+        }
+        span.btns {
+            text-decoration:underline;
+            font-family:"맑은 고딕";
+            font-size:12px;
+        }
+        #col_btns {
+            text-align:center;
+            padding-bottom:5px;
+        }
+        #login_btn {
+            padding:17px 12px 17px 12px;
+            margin-right:10px;
+        }
+        input.input_line {
+            width:100px;
+            height:18px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <table>
+        <tr>
+            <td colspan="3">
+                <div id="login_title">Member Login</div>
+            </td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td><input class="input_line" type="text"></td>
+            <td rowspan="2">
+                <input id="login_btn" type="submit" value="로그인">
+            </td>
+        </tr>
+        <tr>
+            <td>PW</td>
+            <td><input class="input_line" type="password"></td>
+        </tr>
+        <tr>
+            <td id="col_btns" colspan="3">
+                <span class="btns">회원 가입</span>&nbsp;&nbsp;&nbsp;
+                <span class="btns">아이디/비밀번호 찾기</span>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
